@@ -1,6 +1,7 @@
 #include "sort.h"
 /**
- * insertion_sort_list - function that sorts integers in ASC order of a doubly linked list
+ * insertion_sort_list - function that sorts integers
+ *..... in ASC order of a doubly linked list
  * @list: Doubly-linked list to sort
  */
 void insertion_sort_list(listint_t **list)
