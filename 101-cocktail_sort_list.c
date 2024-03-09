@@ -6,7 +6,7 @@
  * @list: double link list
  * Return: No Return
  */
-void _swap(listint_t **node, listint_t **list)
+void swap(listint_t **node, listint_t **list)
 {
 	listint_t *tmp = *node, *tmp2, *tmp3;
 
@@ -16,7 +16,6 @@ void _swap(listint_t **node, listint_t **list)
 
 	tmp = tmp3 = *node;
 	tmp2 = tmp->next;
-
 	tmp->next = tmp2->next;
 	tmp3 = tmp->prev;
 	tmp->prev = tmp2;
@@ -56,7 +55,7 @@ void cocktail_sort_list(listint_t **list)
 			if (head->n > head->next->n)
 			{
 				aux = head;
-			       _swap(&aux, list);
+			       swap(&aux, list);
 			       print_list(*list);
 			       head = aux;
 			}
@@ -73,7 +72,7 @@ void cocktail_sort_list(listint_t **list)
 			if (head->n < head->prev->n)
 			{
 				aux = head->prev;
-				_swap(&aux, list);
+				swap(&aux, list);
 				print_list(*list);
 				head = aux->next;
 			}
