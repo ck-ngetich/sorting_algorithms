@@ -14,7 +14,8 @@ void swap(int *array, ssize_t item1, ssize_t item2)
 	array[item2] = tmp;
 }
 /**
- *lomuto_partition - fuction for  lomuto partition sorting scheme implementation
+ *lomuto_partition - fuction for  lomuto partition sorting
+ *.......scheme implementation
  *@array: array
  *@first: first element in an array
  *@last: last element in an array
