@@ -30,7 +30,7 @@ void counting_sort(int *array, size_t size)
 	int idx, max = 0, *counter = '\0', *value = '\0';
 	size_t i;
 
-	if (array == '\0' || size < 2)
+	if (*array == '\0' || size < 2)
 		return;
 	for (i = 0; i < size; i++)
 		if (array[i] > max)
