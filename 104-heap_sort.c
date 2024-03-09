@@ -15,8 +15,8 @@ void swap(int *a, int *b)
 }
 
 /**
- * maxHeapify - The main function to heapify a Max Heap.
- * @array: array
+ * maxHeapify - function to heapify a Max Heap.
+ * @array: array to heap
  * @size: size of the array for print
  * @idx: index of an array
  * @n: size of the array to run
@@ -48,6 +48,7 @@ void maxHeapify(int *array, size_t size, int idx, size_t n)
 void heap_sort(int *array, size_t size)
 {
 	int i;
+
 	if (*array == '\0' || size < 2)
 		return;
 
